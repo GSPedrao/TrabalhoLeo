@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHP</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <!--Menu-->
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Agende sua consulta</h5>
+        <span class="text-muted">O Sistema Hospitalar do Paraná agendara sua consulta com diversos profissionais, tanto
+          com teleconsultas e presencialmente.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid" style="position: absolute;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="login.html"><button class="btn btn-dark">Login</button></a>
+      </div>
+      <h1 style="color: honeydew;" class="text-center col-12">SHP</h1>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Agende seu Horario em SHP:</h1>
+      </div>
+      <!--Botões-->
+      <a href="#Agendar" class="btn btn-success my-3 col-md-2 py-2 mx-2">Agendar horário</a>
+      <a href="#informacao" class="btn btn-secondary my-3 col-md-2 py-2">Informações</a>
+
+      <!--SlideShow-->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imgs/Medica.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Profissionais de mais alta qualidade Dispostos para sua área de preferência.</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imgs/Cirurgia.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Atendimento 24 horas</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/laboratory-2815641_1920.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Contamos com altos equipamentos para sua saúde.</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <div class="col-md my-5 " id="Agendar">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected></option>
+            <option value="1">Fisioterapeuta</option>
+            <option value="2">Dermatologista</option>
+            <option value="3">Oftalmorlogista</option>
+          </select>
+          <label for="floatingSelectGrid">Oque você gostaria de agendar</label>
+        </div>
+      </div>
+      <div class="col-md my-4">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected></option>
+            <option value="1">Londrina</option>
+            <option value="2">Curitiba</option>
+            <option value="3">Maringá</option>
+          </select>
+          <label for="floatingSelectGrid">Onde</label>
+          <div class="checkbox mb-2">
+
+            <label>
+              <input type="checkbox" value=""> Caso for teleconsulta ative essa op;'ao'
+
+            </label>
+          </div>
+        </div>
+      </div>
+      <a href="Tabela.html"><button class="btn btn-success mb-5">Continuar</button></a>
+
+
+
+
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="text-muted py-5 text-muted border-top">
+    <div class="container mb-3" id="informacao">
+      
+
+
+      <h3 class="mb-4 fw-light">O Sistema Hospitalar do Paraná agendara sua consulta com diversos profissionais, tanto com teleconsultas e
+        presencialmente.</h3>
+
+      <h4 class="fw-light">Consultas Presenciais </h4>
+      <p>Agende por especialidade, profissionais, exames, doenças e procedimentos.</p>
+
+      <h4 class="fw-light">Teleconsulta </h4>
+      <p>Encontre os melhores especialistas para realizar uma consulta médica via chamada de vídeo.</p>
+      <p class="mb-1"> &copy; Gabriel Pedrão </p>
+    </div>
+    
+  </footer>
+</body>
+
+</html>

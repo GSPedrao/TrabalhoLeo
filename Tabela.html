@@ -21,8 +21,9 @@
         <!--Menu-->
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+                <h5 class="text-white h4">Agende sua consulta</h5>
+                <span class="text-muted">O Sistema Hospitalar do Paraná agendara sua consulta com diversos profissionais, tanto
+                    com teleconsultas e presencialmente.</span>
             </div>
         </div>
         <nav class="navbar navbar-dark bg-dark mb-5">
@@ -37,28 +38,42 @@
             <h1 style="color: honeydew;" class="text-center col-12">SHP Agendar</h1>
         </nav>
 
-
+    </header>
         <div class="container">
             <label id="nome">Nome:</label>
             <input class="form-control mb-3" id="nomeUser" type="text">
+            <label id="nome">Número</label>
+            <input class="form-control mb-3" id="numero" type="tel">
+            <div class="col-md my-2 " id="Agendar">
+                <div class="form-floating">
+                    <select class="form-select" id="pagamento"Floating label select example">
+                        <option selected></option>
+                        <option value="1">Débito</option>
+                        <option value="2">Crédito</option>
+                        <option value="3">Boleto Bancário</option>
+                    </select>
+                    <label for="floatingSelectGrid">Forma de Pagamento:</label>
+                </div>
+            </div>
             <button class="btn btn-primary mb-3" type="button" onclick="salvarUser()">Salvar</button>
-    </div>
+        </div>
 
-    <div class="container mb-5" >
-        <table class="table table-striped" id="tabela">
+        <div class="container mb-5">
+            <table class="table table-striped" id="tabela">
                 <tr>
                     <th>Nome</th>
-                    <th></th>
+                    <th>Número</th>
+                    <th>Forma de Pagamento</th>
                 </tr>
-        </table>
-    </div>
-
-    <footer class="text-muted py-5 text-muted border-top">
-        <div class="container mb-3">
-          <p class="mb-1"> &copy; Gabriel Pedrão </p>
+            </table>
         </div>
-    
-      </footer>
+
+        <footer class="text-muted py-5 text-muted border-top">
+            <div class="container mb-3">
+                <p class="mb-1"> &copy; Gabriel Pedrão </p>
+            </div>
+
+        </footer>
 
 </body>
 

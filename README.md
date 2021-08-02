@@ -1,1 +1,3 @@
 # TrabalhoLeo
+
+adicionando read.me
